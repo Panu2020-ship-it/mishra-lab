@@ -1,59 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Company</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishra Lab - IIT Jodhpur | Research & Innovation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="particles-js" aria-hidden="true"></div>
+    <div id="canvas-container"></div>
+    
+    <header class="header">
+        <div class="lab-brand">
+            <div class="lab-logo">
+                <svg class="helix" viewBox="0 0 100 100">
+                    <!-- DNA Helix animation will be controlled by CSS -->
+                    <path class="helix-path" d="M20,80 Q50,20 80,80" fill="none" stroke="#2c3e50"/>
+                    <path class="helix-path" d="M20,20 Q50,80 80,20" fill="none" stroke="#2c3e50"/>
+                </svg>                        
+            </div>
+            <div class="lab-title">
+                <h1>Mishra Lab</h1>
+                <span class="subtitle">IIT Jodhpur</span>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <div class="menu-item"><a href="#research">Research</a></div>
+            <div class="menu-item"><a href="#publications">Publications</a></div>
+            <div class="menu-item"><a href="#team">Team</a></div>
+            <div class="menu-item"><a href="#facilities">Facilities</a></div>
+            <div class="menu-item"><a href="#contact">Contact</a></div>
+        </nav>
+    </header>
 
-  <header class="header" role="banner">
-    <div class="logo-container">
-      <!-- Animated helix SVG logo -->
-      <svg class="ml-logo" width="40" height="40" viewBox="0 0 44 44" role="img" aria-label="Company logo">
-        <g fill="none" stroke="var(--primary)" stroke-width="2.2" stroke-linecap="round">
-          <path class="hx hx-a" d="M10 6 C22 12, 22 32, 10 38"/>
-          <path class="hx hx-b" d="M34 6 C22 12, 22 32, 34 38"/>
-        </g>
-      </svg>
-      <div class="brand">
-        <h1 class="brand-name">Your Company</h1>
-        <p class="brand-sub">Tagline</p>
-      </div>
-    </div>
-    <nav class="nav-menu" aria-label="Main">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h2 class="glitch-text">Advancing Research Frontiers</h2>
+                <p class="hero-description">Pioneering innovative solutions through interdisciplinary research at IIT Jodhpur</p>
+                <div class="research-highlights">
+                    <div class="highlight-card">
+                        <span class="highlight-number">25+</span>
+                        <span class="highlight-label">Research Papers</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-number">10+</span>
+                        <span class="highlight-label">Patents</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-number">15+</span>
+                        <span class="highlight-label">Collaborations</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <main id="home" class="main">
-    <section class="hero" aria-label="Hero">
-      <h2 class="hero-title">Build the future with us</h2>
-      <p class="hero-text">We craft scalable solutions backed by research and practical engineering.</p>
-      <a class="cta" href="#contact">Start a project</a>
-    </section>
+        <section id="research" class="research-section">
+            <h2 class="section-title">Research Focus</h2>
+            <div class="research-grid">
+                <article class="research-card">
+                    <div class="card-content">
+                        <h3>Machine Learning</h3>
+                        <p>Advanced algorithms and computational models for real-world applications</p>
+                    </div>
+                </article>
+                <article class="research-card">
+                    <div class="card-content">
+                        <h3>Data Analytics</h3>
+                        <p>Big data processing and analysis for scientific discoveries</p>
+                    </div>
+                </article>
+                <article class="research-card">
+                    <div class="card-content">
+                        <h3>Quantum Computing</h3>
+                        <p>Next-generation computing paradigms and algorithms</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <section id="services" class="card-grid" aria-label="Services">
-      <h3>Services</h3>
-      <div class="grid">
-        <article class="card">
-          <h4>Product Engineering</h4>
-          <p>From idea to launch with robust architecture and CICD workflows.</p>
-        </article>
-        <article class="card">
-          <h4>AI & Data</h4>
-          <p>Applied machine learning, analytics, and MLOps for real outcomes.</p>
-        </article>
-        <article class="card">
-          <h4>Cloud & DevOps</h4>
-          <p>Secure, observable platforms with cost‑aware scaling
+        <section id="publications" class="publications-section">
+            <h2 class="section-title">Latest Publications</h2>
+            <div class="publications-grid">
+                <!-- Dynamic publication cards will be added here -->
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-grid">
+                <!-- Team member cards will be added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Mishra Lab</p>
+                <p>Department of Computer Science</p>
+                <p>IIT Jodhpur</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#research">Research</a>
+                <a href="#publications">Publications</a>
+                <a href="#team">Team</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <!-- Social media links will be added here -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mishra Lab, IIT Jodhpur. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
