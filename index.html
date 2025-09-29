@@ -1,81 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mishra Lab - IIT Jodhpur | Research & Innovation</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div id="canvas-container"></div>
-    
-    
-    <header class="header">
-        <div class="lab-brand">
-            <div class="lab-logo">
-                <svg class="helix" viewBox="0 0 100 100">
-                    <!-- DNA Helix animation will be controlled by CSS -->
-                    <path class="helix-path" d="M20,80 Q50,20 80,80" fill="none" stroke="#2c3e50"/>
-                    <path class="helix-path" d="M20,20 Q50,80 80,20" fill="none" stroke="#2c3e50"/>
-                </svg>                        
-            </div>
-            <div class="lab-title">
-                <h1>Mishra Lab</h1>
-                <span class="subtitle">IIT Jodhpur</span>
-            </div>
-        </div>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div id="particles-js" aria-hidden="true"></div>
 
-    <main>
-        <section id="home" class="hero-section">
-            <h2>Welcome to Mishra Lab</h2>
-            <p>Advancing Research at IIT Jodhpur</p>
-        </section>
+  <header class="header" role="banner">
+    <div class="logo-container">
+      <!-- New helix-style SVG logo -->
+      <svg class="ml-logo" width="48" height="48" viewBox="0 0 44 44" role="img" aria-label="Company logo">
+        <g fill="none" stroke="var(--primary)" stroke-width="2.2" stroke-linecap="round">
+          <path d="M10 6 C22 12, 22 32, 10 38" />
+          <path d="M34 6 C22 12, 22 32, 34 38" />
+        </g>
+      </svg>
+      <div class="brand">
+        <h1 class="brand-name">Your Company</h1>
+        <p class="brand-sub">Innovation • Research • Delivery</p>
+      </div>
+    </div>
+    <nav class="nav-menu" aria-label="Main">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <section id="research" class="research-section">
-            <h2>Research Areas</h2>
-            <div class="research-grid">
-                <!-- Add research areas here -->
-            </div>
-        </section>
+  <main id="home" class="main">
+    <section class="hero" aria-label="Hero">
+      <h2 class="hero-title">Build the future with us</h2>
+      <p class="hero-text">We craft scalable solutions backed by research and practical engineering.</p>
+      <a class="cta" href="#contact">Start a project</a>
+    </section>
 
-        <section id="publications" class="publications-section">
-            <h2>Latest Publications</h2>
-            <div class="publications-list">
-                <!-- Add publications here -->
-            </div>
-        </section>
+    <section id="services" class="card-grid" aria-label="Services">
+      <h3>Services</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Product Engineering</h4>
+          <p>From idea to launch with robust architecture and CICD workflows.</p>
+        </article>
+        <article class="card">
+          <h4>AI & Data</h4>
+          <p>Applied machine learning, analytics, and MLOps for real outcomes.</p>
+        </article>
+        <article class="card">
+          <h4>Cloud & DevOps</h4>
+          <p>Secure, observable platforms with cost‑aware scaling strategies.</p>
+        </article>
+      </div>
+    </section>
 
-        <section id="team" class="team-section">
-            <h2>Our Team</h2>
-            <div class="team-grid">
-                <!-- Add team members here -->
-            </div>
-        </section>
+    <section id="work" class="showcase" aria-label="Work">
+      <h3>Selected Work</h3>
+      <ul class="showcase-list">
+        <li class="showcase-item">Realtime analytics dashboard</li>
+        <li class="showcase-item">Computer vision inspection</li>
+        <li class="showcase-item">Serverless API platform</li>
+      </ul>
+    </section>
 
-        <section id="contact" class="contact-section">
-            <h2>Contact Us</h2>
-            <div class="contact-info">
-                <!-- Add contact information here -->
-            </div>
-        </section>
-    </main>
+    <section id="contact" class="contact" aria-label="Contact">
+      <h3>Contact</h3>
+      <form class="contact-form" action="#" method="post">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label class="full">
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="cta" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2024 Mishra Lab, IIT Jodhpur. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
+
