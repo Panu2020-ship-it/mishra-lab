@@ -72,6 +72,86 @@
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(8px);
         }
+    /* ================================================================== */
+           /* START: Publication Section Styles */
+   /* ================================================================== */
+        .publication-item {
+         display: flex;
+         align-items: center;
+         gap: 20px;
+         padding: 20px;
+         margin-bottom: 16px;
+         background-color: #ffffff;
+         border-radius: 12px;
+         box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+         border: 1px solid #e9ecef;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .publication-item:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 10px 20px rgba(44, 62, 80, 0.1);
+        }
+        .publication-item .thumbnail img {
+         width: 120px;
+         height: 100px;
+         object-fit: cover;
+         border-radius: 8px;
+         border: 1px solid #ddd;
+        }
+        .publication-item .details {
+        flex-grow: 1; /* This makes the text take up the available space */
+        }
+        .publication-item .details p {
+          margin: 0 0 6px 0;
+         }
+       .publication-item .title {
+         font-size: 1.1em;
+         font-weight: 700;
+         color: var(--color-dark-slate);
+        }
+       .publication-item .authors {
+         font-size: 0.9em;
+        color: #555555;
+        }
+       .publication-item .venue {
+          font-size: 0.9em;
+          color: #777777;
+        }
+       .publication-item .venue em {
+          font-style: italic;
+          font-weight: 500;
+       }
+       .view-paper-btn {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+         padding: 10px 18px;
+         background-color: #3b82f6; /* A nice, modern blue */
+         color: white;
+         text-decoration: none;
+         border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.9em;
+        white-space: nowrap; /* Prevents button text from wrapping */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.view-paper-btn:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+.view-paper-btn.disabled {
+    background-color: #d1d5db; /* Gray for disabled state */
+    color: #6b7280;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.view-paper-btn svg {
+    width: 16px;
+    height: 16px;
+}
+/* ================================================================== */
+/* END: Publication Section Styles */
+/* ================================================================== */
     </style>
 </head>
 <body class="antialiased">
@@ -83,7 +163,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-4">
                 <div class="lab-logo-3d w-12 h-12 bg-[var(--color-iitj-maroon)] text-white flex items-center justify-center rounded-lg font-bold text-xl shadow-lg cursor-pointer">ML</div>
-                <h1 class="text-2xl font-extrabold text-[var(--color-dark-slate)] tracking-tight">Mishra Rsesearch Group</h1>
+                <h1 class="text-2xl font-extrabold text-[var(--color-dark-slate)] tracking-tight">Mishra Research Group</h1>
             </div>
             <nav class="hidden md:flex space-x-8 text-lg font-medium">
                 <a href="#home" class="text-[var(--color-dark-slate)] hover:text-[var(--color-iitj-maroon)] transition duration-300 relative group">Home</a>
