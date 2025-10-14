@@ -370,6 +370,21 @@
             </div>
         </div>
 
+        .publication-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.thumbnail img {
+    width: 80px; /* or a responsive unit like 'clamp(60px, 5vw, 100px)' */
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+
           <div class="publication-item">
             <div class="thumbnail">
                 <img src="publication4.jpg" alt="Thumbnail for ptychography paper">
